@@ -35,7 +35,7 @@ public abstract class Rule<ViewType extends View, ValueType> {
 
     public final boolean validate() {
         
-        boolean isDisabled = !view.isEnabled()   
+        boolean isDisabled = !view.isEnabled();
         boolean isHidden = (view.getVisibility() != View.VISIBLE);
         
         if(isDisabled || isHidden) return true;
